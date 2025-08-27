@@ -24,7 +24,7 @@ A complexidade ciclomática do método `_recursive_multiply` é **2**. Isso sign
 
 **Diagrama do Grafo de Fluxo:**
 
-![Diagrama do Grafo de Fluxo](../artefatos/trabalho-individual-1-FPAA-diagramaDeFluxo.png)
+![Diagrama do Grafo de Fluxo](https://github.com/kaiohs333/trabalho-individual-1-FPAA/blob/main/artefatos/trabalho-individual-1-FPAA-diagramaDeFluxo.png)
 
 #### Análise dos Caminhos de Execução
 

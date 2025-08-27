@@ -74,7 +74,7 @@ O resultado final é `z2 * 10^n + z1 * 10^(n/2) + z0`. Essa redução de 4 para 
     ```
 2.  Navegue até a pasta do código:
     ```bash
-    cd SEU-REPOSITORIO/codigo
+    cd trabalho-individual-1-FPAA/codigo
     ```
 3.  Execute o script principal:
     ```bash

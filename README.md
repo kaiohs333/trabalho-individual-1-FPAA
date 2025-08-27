@@ -6,15 +6,6 @@ Este projeto apresenta uma implementação em Python do algoritmo de Karatsuba. 
 
 O algoritmo utiliza uma abordagem de **dividir para conquistar** para multiplicar números inteiros grandes com uma complexidade assintótica melhor do que o método de multiplicação tradicional. O script principal é interativo, permitindo ao usuário fornecer seus próprios números para o cálculo.
 
-### Lógica do Algoritmo
-
-A lógica principal está no método privado `_recursive_multiply`, que segue os seguintes passos:
-
-1.  **Caso Base**: A recursão para quando os números `x` ou `y` são menores que 10.
-2.  **Divisão dos Números**: Os números são divididos em duas metades (`a`, `b` para `x`; `c`, `d` para `y`).
-3.  **Chamadas Recursivas**: O algoritmo faz três chamadas recursivas para calcular os produtos `ac`, `bd` e um termo combinado `(a+b)*(c+d)`.
-4.  **Combinação dos Resultados**: Os resultados são combinados usando a fórmula de Karatsuba para formar o produto final.
-
 ## Como executar o projeto
 
 1.  Clone este repositório para sua máquina local.
@@ -29,7 +20,23 @@ A lógica principal está no método privado `_recursive_multiply`, que segue os
 
 ### Análise da Complexidade Ciclomática
 
-A análise de complexidade ciclomática foca no método `_recursive_multiply`, que contém a lógica central do algoritmo. Usamos a fórmula `M = E - N + 2P`, resultando em uma complexidade de **2**, que representa o caminho do caso base e o caminho recursivo.
+A complexidade ciclomática do método `_recursive_multiply` é **2**. Isso significa que existem 2 caminhos linearmente independentes no grafo de fluxo de controle, como pode ser visto no diagrama abaixo.
+
+**Diagrama do Grafo de Fluxo:**
+
+![Diagrama do Grafo de Fluxo](../artefatos/trabalho-individual-1-FPAA-diagramaDeFluxo.png)
+
+#### Análise dos Caminhos de Execução
+
+Com base no grafo, identificamos os 2 caminhos independentes que uma execução pode seguir:
+
+*   **Caminho 1: O Caso Base (N1 → N2 → N3 → N7)**
+    *   Este caminho é executado quando a condição `x < 10 or y < 10` é **verdadeira**.
+    *   O fluxo é o mais curto possível: a função realiza uma multiplicação simples e retorna o valor imediatamente, sem executar nenhuma chamada recursiva.
+
+*   **Caminho 2: O Passo Recursivo (N1 → N2 → N4 → N5 → N6 → N7)**
+    *   Este caminho é executado quando a condição `x < 10 or y < 10` é **falsa**.
+    *   O fluxo executa a lógica completa do algoritmo de Karatsuba: divide os números em partes menores (N4), realiza três chamadas recursivas a si mesmo para calcular os subprodutos (N5) e, finalmente, combina esses resultados para obter o produto final (N6) antes de retornar.
 
 ### Análise da Complexidade Assintótica
 

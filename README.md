@@ -99,8 +99,7 @@ Uma complexidade de **2** indica que há dois caminhos independentes no código:
 
 **Diagrama do Grafo de Fluxo:**
 
-*Cole aqui o link da sua imagem para que ela apareça no README.*
-`![Diagrama do Grafo de Fluxo](https://github.com/kaiohs333/trabalho-individual-1-FPAA/blob/main/artefatos/trabalho-individual-1-FPAA-diagramaDeFluxo.png)`
+https://github.com/kaiohs333/trabalho-individual-1-FPAA/blob/main/artefatos/trabalho-individual-1-FPAA-diagramaDeFluxo.png)
 
 ### Análise da Complexidade Assintótica
 

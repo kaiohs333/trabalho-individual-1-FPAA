@@ -97,8 +97,9 @@ A complexidade ciclomática de um fluxo de controle é calculada pela fórmula `
 
 Uma complexidade de **2** indica que há dois caminhos independentes no código: o caso base e o passo recursivo.
 
-**Diagrama do Grafo de Fluxo:**                                                                                                                                                │
-![Diagrama do Grafo de Fluxo](https://raw.githubusercontent.com/kaiohs333/trabalho-individual-1-FPAA/main/artefatos/trabalho-individual-1-FPAA-diagramaDeFluxo.png  
+**Diagrama do Grafo de Fluxo:**                                                                                                       
+![Diagrama do Grafo de Fluxo](https://raw.githubusercontent.com/kaiohs333/trabalho-individual-1-FPAA/main/artefatos/trabalho-individual-1-FPAA-diagramaDeFluxo.png)
+
 
 ### Análise da Complexidade Assintótica
 
